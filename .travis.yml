@@ -4,8 +4,9 @@ otp_release:
   - 20.3
   - 21.3
   - 22.0
-script: rebar3 eunit
+script: rebar3 eunit -c
 after_success:
   - pip install --user codecov
-  - bin/covertool -cover _build/test/cover/eunit.coverdata -appname nautilus -output cobertura.xml
+  - rebar3 covertool generate
+  - mv _build/test/covertool/nautilus.covertool.xml cobertura.xml
   - codecov
