@@ -1,7 +1,7 @@
 nautilus
 =====
 
-An OTP library
+A Cuttlefish compatible validating configuration reader
 
 Build
 -----

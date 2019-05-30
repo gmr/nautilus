@@ -1,0 +1,11 @@
+sudo: false
+language: erlang
+otp_release:
+  - 20.3
+  - 21.3
+  - 22.0
+script: bin/rebar3 eunit
+after_success:
+  - pip install --user codecov
+  - bin/covertool -cover _build/test/cover/eunit.coverdata -appname nautilus -output cobertura.xml
+  - codecov
