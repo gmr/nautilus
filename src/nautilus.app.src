@@ -1,5 +1,5 @@
 {application, nautilus,
- [{description, "An OTP library"},
+ [{description, "A Cuttlefish compatible validating configuration reader"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications,
@@ -8,8 +8,7 @@
    ]},
   {env,[]},
   {modules, []},
-
   {maintainers, []},
-  {licenses, ["Apache 2.0"]},
+  {licenses, ["BSD 3-Clause License"]},
   {links, []}
  ]}.
