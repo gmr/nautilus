@@ -1,2 +1,9 @@
-# nautilus
-Cuttlefish compatible validating configuration reader
+nautilus
+=====
+
+An OTP library
+
+Build
+-----
+
+    $ rebar3 compile
